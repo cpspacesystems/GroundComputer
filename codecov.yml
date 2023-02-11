@@ -1,0 +1,28 @@
+codecov:
+  require_ci_to_pass: false #This setting will update the bot regardless of whether or not tests pass
+
+coverage:
+  status:
+    project:
+      default:
+        informational: true
+    patch:
+      default:
+        informational: true
+  precision: 2
+  round: down
+  range: "66...100"
+
+flags:
+  unit:
+    carryforward: true 
+  e2e-ci:
+    carryforward: true
+  e2e-full:
+    carryforward: true    
+
+comment:
+  layout: "reach,diff,flags,files,footer"
+  behavior: default
+  require_changes: false
+  show_carryforward_flags: true
